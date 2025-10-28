@@ -31,7 +31,7 @@ Amplitude Modulation is the process of changing the amplitude of a relatively hi
 
 Note: Keep all the switch faults in off position
 
-Algorithm
+Algorithm:
 1.	Define Parameters
 First, define the parameters for your signals:
 •	Carrier frequency (fc)
@@ -84,11 +84,11 @@ TABULATION:
 
 ![WhatsApp Image 2025-10-28 at 23 07 02_fd0519f6](https://github.com/user-attachments/assets/01c6a68f-ace5-4c33-810a-af932ef86b61)
 
-Calculation
+Calculation:
 1.	ma (Theory) = am/ac = 0.5
 2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =0.2540
 
-MODEL GRAPH
+MODEL GRAPH:
  <img width="919" height="1290" alt="image" src="https://github.com/user-attachments/assets/55326c5b-7dd5-4873-aaf6-d219bb7c4420" />
 
  
