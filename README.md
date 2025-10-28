@@ -74,31 +74,23 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 •	If any Error, correct it in code and execute again
 •	Verify the generated waveform using Tabulation and Model Waveform
 
-Program
+Program:
+clc; clear; close; Ac=13; Am=6.5; Fc=4990; Fm=499; Fs=40000; t=0:1/Fs:2/Fm; E1=Amsin(2%piFmt); subplot(4,1,1); plot(t,E1); xlabel("Time(s"); ylabel("Amplitude"); title("Message Signal"); E2=Acsin(2%piFct); subplot(4,1,2); plot(t,E2); xlabel("Time(s"); ylabel("Amplitude"); title("Carrier Signal"); E3=(Ac+Amsin(2%piFmt)).sin(2%piFct); subplot(4,1,3); plot(t,E3); xlabel("Time(s"); ylabel("Amplitude"); title("AM Signal"); demodulated_signal=abs(hilbert(E3))-Ac; subplot(4,1,4); plot(t,demodulated_signal); xlabel("Time(s"); ylabel("Amplitude"); title("Demodulated Signal"); xgrid();
 
-
-
-Output Waveform
-
-
-
-
+Output Waveform:
+![WhatsApp Image 2025-10-13 at 21 39 04_48c9d3f8](https://github.com/user-attachments/assets/ed5e01cd-5419-466e-89d0-833dd876b96b)
 
 TABULATION:
 
-
+![WhatsApp Image 2025-10-28 at 23 07 02_fd0519f6](https://github.com/user-attachments/assets/01c6a68f-ace5-4c33-810a-af932ef86b61)
 
 Calculation
-1.	ma (Theory) = am/ac =
-2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =
-
+1.	ma (Theory) = am/ac = 0.5
+2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =0.2540
 
 MODEL GRAPH
  <img width="919" height="1290" alt="image" src="https://github.com/user-attachments/assets/55326c5b-7dd5-4873-aaf6-d219bb7c4420" />
 
  
- 
-
-
 RESULT:
 Thus the amplitude modulation and demodulation is experimentally done and the output is verified.
